@@ -1,0 +1,40 @@
+#content { width: 315px; border: 1px solid black; position: relative; margin: 40px auto 0 auto; }
+#content .stage { float: left; width: 250px; height: 100%; border-right: 1px solid black; position: relative; background: url(/img/block-bg.gif) repeat; }
+#content .right { float: left; width: 100px; height: 100%; padding: 0 15px; }
+audio { margin: 10px auto 0 auto; width: 200px; display: block; }
+.experience { width: 166px; position: absolute; right: 0; top: 0; }
+.experience img { border: none; padding: 0; margin: 0; }
+
+
+
+/* Shape
+ ------------------------------------*/
+.shape { position: absolute; top: 0px; /*background-color: blue;*/ }
+.shape a, .stage>a { position: absolute; width: 12px; height: 12px; background: url(../img/block.gif) no-repeat top left; }
+
+/* Stage
+  -----------------------------------*/
+
+/* Right panel
+  -----------------------------------*/
+.right h3 { margin: 0; }
+.right p { margin: 0 0 10px 0; }
+.right .next-shape { width: 50px; height: 50px; border: 1px solid black; position: relative; }
+.right .next-shape .shape { top: 10px; left: 10px; }
+
+/* Overlay
+  ----------------------------------*/
+.over-lay { width: 100%; height: 100%; position: absolute; background-color: gray; z-index: 2; }
+.over-lay .menu { height: inherit; width: inherit; position: absolute; text-align: center; }
+.over-lay h3 { color: white; }
+
+
+/* Builder
+  -----------------------------------*/
+.builder { width: 400px; height: 400px; position: absolute; right: 10px; top: 0; border: 1px dashed black; }
+.builder .grid,
+.builder .inputs { width: 200px; height: 200px; float: left; }
+.builder .inputs { text-align: center; }
+
+.builder .grid a { width: 49px; height: 49px; background-color: gray; display: block; float: left; border-bottom: 1px dashed black;  border-right: 1px dashed black; }
+.builder .grid a.active { background: green; }

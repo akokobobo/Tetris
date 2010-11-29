@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Tetris</title>
+    <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/shape.js"></script>
+    <script type="text/javascript" src="js/stage.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+    <script type="text/javascript" src="js/builder.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+
+</head>
+
+<body>
+<img src="img/block.gif" style="display:none"/>
+<div id="content">
+    <div class="over-lay">
+        <div class="start menu">
+            <h3>TETRIS</h3>
+            <button>Start</button>
+        </div>
+        <div class="end menu">
+            <h3>Game Over!</h3>
+            <button>Play Again</button>
+        </div>
+        <div class="pause menu">
+            <h3>Paused</h3>
+            <button>Resume</button>
+        </div>
+    </div>
+    <div class="stage">
+    </div>
+    <div class="right">
+        <h3>Level</h3>
+        <p class="level">99</p>
+        <h3>Next</h3>
+        <div class="next-shape"></div>
+        <h3>Score</h3>
+        <p class="score">00000000000</p>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+
+<div class="experience">
+    <fieldset>
+        <legend>Full Experience:</legend>
+        <a href="http://www.google.com/chrome"><img src="img/chrome.gif" /></a>
+    </fieldset>
+    <fieldset>
+        <legend>Degraded Experience:</legend>
+        <a href="http://www.mozilla.com/en-US/"><img src="img/firefox.gif" /></a>
+        <a href="http://www.apple.com/safari/"><img src="img/safari.gif" /></a>
+        <a href="http://www.opera.com/"><img src="img/opera.gif" /></a>
+        <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx"><img src="img/ie.gif" /></a>
+    </fieldset>
+</div>
+<audio src="sound/sound.ogg" autoplay controls preload loop>
+Your browser does not support the audio element.
+</audio>
+
+<div class="builder" style="display:none;">
+    <div class="grid">
+        <a href="#" data-index="0"></a>
+        <a href="#" data-index="1"></a>
+        <a href="#" data-index="2"></a>
+        <a href="#" data-index="3"></a>
+        <a href="#" data-index="4"></a>
+        <a href="#" data-index="5"></a>
+        <a href="#" data-index="6"></a>
+        <a href="#" data-index="7"></a>
+        <a href="#" data-index="8"></a>
+        <a href="#" data-index="9"></a>
+        <a href="#" data-index="10"></a>
+        <a href="#" data-index="11"></a>
+        <a href="#" data-index="12"></a>
+        <a href="#" data-index="13"></a>
+        <a href="#" data-index="14"></a>
+        <a href="#" data-index="15"></a>
+    </div>
+    <div class="inputs">
+        <button class="north">North</button>
+        <button class="east">East</button>
+        <button class="south">South</button>
+        <button class="west">West</button>
+        <button class="clear">Clear</button>
+        <textarea rows="19" cols="21"></textarea>
+    </div>
+</div>
+
+</body>
+</html>
